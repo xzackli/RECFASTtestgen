@@ -8,7 +8,7 @@ Returns tuple of (z's, xe's)
 function get_xe(OmegaB::Float64, OmegaC::Float64, OmegaL::Float64,
                 HOinp::Float64, Tnow::Float64, Yp::Float64;
                 Hswitch::Int64=1, Heswitch::Int64=6,
-                Nz::Int64=1000, zstart::Float64=10000., zend::Float64=0.)
+                Nz::Int64=10000, zstart::Float64=10000., zend::Float64=0.)
 
     xe = Array{Float64}(undef,Nz)
     ccall(
